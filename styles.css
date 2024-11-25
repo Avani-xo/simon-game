@@ -1,0 +1,112 @@
+body {
+  text-align: center;
+  background-color: #ce89ff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  
+  color: #6b1a40;
+}
+
+.container {
+  display: flex;
+  
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+.row{
+
+}
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid rgb(255, 255, 255);
+  border-radius: 20%;
+}
+
+.game-over {
+  background-color: rgb(0, 0, 0);
+  opacity: 0.8;
+ 
+}
+
+.red {
+  background-color: rgb(245, 64, 64);
+}
+
+.green {
+  background-color: rgb(51, 206, 51);
+}
+
+.blue {
+  background-color: rgb(88, 152, 255);
+}
+
+.yellow {
+  background-color: rgb(255, 255, 90);
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+.flash {
+  -moz-animation: flash 1s ease-out;
+  -moz-animation-iteration-count: 1;
+
+  -webkit-animation: flash 1s ease-out;
+  -webkit-animation-iteration-count: 1;
+
+  -ms-animation: flash 1s ease-out;
+  -ms-animation-iteration-count: 1;
+}
+
+@keyframes flash {
+    0% { background-color: transparent; }
+    50% { background-color: #fbf8b2; }
+    100% { background-color: transparent; }
+}
+
+@-webkit-keyframes flash {
+    0% { background-color: transparent; }
+    50% { background-color: #fbf8b2; }
+    100% { background-color: transparent; }
+}
+
+@-moz-keyframes flash {
+    0% { background-color: transparent; }
+    50% { background-color: #fbf8b2; }
+    100% { background-color: transparent; }
+}
+
+@-ms-keyframes flash {
+    0% { background-color: transparent; }
+    50% { background-color: #fbf8b2; }
+    100% { background-color: transparent; }
+}
+.ta {
+  background-color: rgb(255, 255, 255);
+  transition: transform 0.5s ease;
+  border-radius: 10px;
+  width: 6rem;
+  height: 2rem;
+}
+
+/* .ta:hover {
+  transform: translateY(-5px);
+  color: rgb(255, 255, 255);
+  background-color: blueviolet;
+}
+.tabt{
+  padding: 2rem;
+} */
